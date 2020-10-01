@@ -1,0 +1,203 @@
+object Form1: TForm1
+  Left = 273
+  Height = 680
+  Top = 156
+  Width = 666
+  Caption = 'ResetBtn'
+  ClientHeight = 680
+  ClientWidth = 666
+  DesignTimePPI = 120
+  LCLVersion = '2.0.10.0'
+  object InsertBtn: TButton
+    Left = 8
+    Height = 31
+    Top = 5
+    Width = 94
+    Caption = 'Insert'
+    OnClick = InsertBtnClick
+    TabOrder = 0
+  end
+  object InversBtn: TButton
+    Left = 200
+    Height = 31
+    Top = 72
+    Width = 94
+    Caption = 'Invers'
+    OnClick = InversBtnClick
+    TabOrder = 1
+  end
+  object Image1: TImage
+    Left = 24
+    Height = 113
+    Top = 264
+    Width = 113
+    AutoSize = True
+  end
+  object SaveBtn: TButton
+    Left = 112
+    Height = 31
+    Top = 5
+    Width = 94
+    Caption = 'Save'
+    OnClick = SaveBtnClick
+    TabOrder = 2
+  end
+  object TrackBar1: TTrackBar
+    Left = 312
+    Height = 31
+    Top = 32
+    Width = 248
+    Max = 255
+    Min = -255
+    OnChange = TrackBar1Change
+    Position = 0
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 3
+  end
+  object Edit1: TEdit
+    Left = 336
+    Height = 28
+    Top = 72
+    Width = 64
+    OnChange = Edit1Change
+    TabOrder = 4
+    Text = '0'
+  end
+  object ResetBtn: TButton
+    Left = 416
+    Height = 31
+    Top = 69
+    Width = 120
+    Caption = 'Reset Brightness'
+    OnClick = ResetBtnClick
+    TabOrder = 5
+  end
+  object BrightnessLabel: TLabel
+    Left = 368
+    Height = 20
+    Top = 8
+    Width = 125
+    Caption = 'Brightness Settings'
+    ParentColor = False
+    OnClick = BrightnessLabelClick
+  end
+  object SketchBtn: TButton
+    Left = 200
+    Height = 31
+    Top = 109
+    Width = 94
+    Caption = 'Sketch'
+    OnClick = SketchBtnClick
+    TabOrder = 6
+  end
+  object BinerBtn: TButton
+    Left = 104
+    Height = 31
+    Top = 72
+    Width = 94
+    Caption = 'Binerisasi'
+    OnClick = BinerBtnClick
+    TabOrder = 7
+  end
+  object SharpeningBtn: TButton
+    Left = 104
+    Height = 33
+    Top = 109
+    Width = 94
+    Caption = 'Sharpening'
+    OnClick = SharpeningBtnClick
+    TabOrder = 8
+  end
+  object SmoothingBtn: TButton
+    Left = 8
+    Height = 31
+    Top = 109
+    Width = 94
+    Caption = 'Smoothing'
+    OnClick = SmoothingBtnClick
+    TabOrder = 9
+  end
+  object GrayscaleBtn: TButton
+    Left = 8
+    Height = 31
+    Top = 72
+    Width = 94
+    Caption = 'Grayscale'
+    DoubleBuffered = False
+    OnClick = GrayscaleBtnClick
+    ParentDoubleBuffered = False
+    TabOrder = 10
+  end
+  object TrackBarG: TTrackBar
+    Left = 312
+    Height = 40
+    Top = 187
+    Width = 202
+    OnChange = TrackBarGChange
+    Position = 0
+    TabOrder = 11
+  end
+  object ContrastBtn: TButton
+    Left = 384
+    Height = 31
+    Top = 219
+    Width = 94
+    Caption = 'Contrast'
+    OnClick = ContrastBtnClick
+    TabOrder = 12
+  end
+  object TrackBarP: TTrackBar
+    Left = 312
+    Height = 40
+    Top = 147
+    Width = 202
+    Max = 255
+    Min = -255
+    OnChange = TrackBarPChange
+    Position = 0
+    TabOrder = 13
+  end
+  object BrightnessLabel1: TLabel
+    Left = 298
+    Height = 20
+    Top = 155
+    Width = 15
+    Caption = 'P :'
+    ParentColor = False
+    OnClick = BrightnessLabelClick
+  end
+  object BrightnessLabel2: TLabel
+    Left = 296
+    Height = 20
+    Top = 187
+    Width = 17
+    Caption = 'G :'
+    ParentColor = False
+    OnClick = BrightnessLabelClick
+  end
+  object Edit2: TEdit
+    Left = 508
+    Height = 28
+    Top = 147
+    Width = 64
+    TabOrder = 14
+    Text = '0'
+  end
+  object Edit3: TEdit
+    Left = 508
+    Height = 28
+    Top = 187
+    Width = 64
+    TabOrder = 15
+    Text = '0'
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 64
+    Top = 176
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    Left = 208
+    Top = 176
+  end
+end
